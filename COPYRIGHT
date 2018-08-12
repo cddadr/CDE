@@ -1,0 +1,26 @@
+The source code to the programs and libraries of CDE (the Common Desktop
+Environment) are released under the terms of the GNU Lesser/Library General
+Public License, version 2.0, or at your choice any later version, a copy of 
+version 2.1 of the GNU LGPL is included in LICENSE.
+
+NOTE! For the purposes of this license, all of CDE is considered a Library
+as per section 0 of the LGPL 2.1. In addition, linking with CDE will be
+construed to be either: i) static or dynamic binding into an executable,
+ii) accessing functionality via network interfaces, for example via sockets.
+Such linking does *not* fall under the heading of "derived work".
+
+This means when you statically or dynamically link against unmodified
+versions of CDE code you will not be required to release any of your own
+source code or object files, and no additional license requirements
+are required with the release of your binaries. However when statically or
+dynamically linking against versions of CDE code that you have modified,
+those changes to CDE must be made available under the terms of the GNU LGPL.
+
+In addition, media files such as images, icons and documentation are
+released under the terms of the Creative Commons Attribution Share Alike 3.0
+license; the attribution for derived works should read "The Open Group".
+ - http://creativecommons.org/licenses/by-sa/3.0/
+
+Also note that the GNU LGPL is copyrighted by the Free Software
+Foundation, but the instance of code that it refers to (CDE) is
+copyrighted by The Open Group and others who actually wrote it."

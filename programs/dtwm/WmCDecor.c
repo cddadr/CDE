@@ -203,8 +203,13 @@ void FrameExposureProc (ClientData *pcd)
     /* use "active" GCs if we have keyboard focus */
 
     if (pcd == wmGD.keyboardFocus) {
-	topGC = CLIENT_APPEARANCE(pcd).activeTopShadowGC;
-	botGC = CLIENT_APPEARANCE(pcd).activeBottomShadowGC;
+#ifndef HIGHLIGHT_ACTIVE_BORDER
+	topGC = CLIENT_APPEARANCE(pcd).inactiveTopShadowGC;
+	botGC = CLIENT_APPEARANCE(pcd).inactiveBottomShadowGC;
+#else /* HIGHLIGHT_ACTIVE_BORDER */
+        topGC = CLIENT_APPEARANCE(pcd).activeTopShadowGC;
+        botGC = CLIENT_APPEARANCE(pcd).activeBottomShadowGC;
+#endif /* HIGHLIGHT_ACTIVE_BORDER */
     }
     else {
 	topGC = CLIENT_APPEARANCE(pcd).inactiveTopShadowGC;
@@ -1226,7 +1231,11 @@ void DrawWindowTitle (ClientData *pcd, Boolean eraseFirst)
     {
 	/* use "active" GC if we have keyboard focus */
 	if (pcd == wmGD.keyboardFocus) {
-	    clientGC = CLIENT_APPEARANCE(pcd).activeGC;
+#ifndef HIGHLIGHT_ACTIVE_BORDER
+	    clientGC = CLIENT_APPEARANCE(pcd).inactiveGC;
+#else /* HIGHLIGHT_ACTIVE_BORDER */
+            clientGC = CLIENT_APPEARANCE(pcd).activeGC;
+#endif /* HIGHLIGHT_ACTIVE_BORDER */
 	}
 	else {
 	    clientGC = CLIENT_APPEARANCE(pcd).inactiveGC;
@@ -2099,13 +2108,21 @@ ShowActiveClientFrame (ClientData *pcd)
     {
 	attr_mask |= CWBackPixmap;
 	window_attribs.background_pixmap =
-		CLIENT_APPEARANCE(pcd).activeBackgroundPixmap;
+#ifndef HIGHLIGHT_ACTIVE_BORDER
+		CLIENT_APPEARANCE(pcd).backgroundPixmap;
+#else /* HIGHLIGHT_ACTIVE_BORDER */
+                CLIENT_APPEARANCE(pcd).activeBackgroundPixmap;
+#endif /* HIGHLIGHT_ACTIVE_BORDER */
     }
     else
     {
 	attr_mask |= CWBackPixel;
 	window_attribs.background_pixel = 
-		CLIENT_APPEARANCE(pcd).activeBackground;
+#ifndef HIGHLIGHT_ACTIVE_BORDER
+		CLIENT_APPEARANCE(pcd).background;
+#else /* HIGHLIGHT_ACTIVE_BORDER */
+                CLIENT_APPEARANCE(pcd).activeBackground;
+#endif /* HIGHLIGHT_ACTIVE_BORDER */
     }
 
 
@@ -2660,8 +2677,13 @@ Boolean DepressGadget (ClientData *pcd, int gadget, Boolean depressed)
     {
 	/* use "active" GCs if we have keyboard focus */
 	if (pcd == wmGD.keyboardFocus) {
-	    topGC = CLIENT_APPEARANCE(pcd).activeTopShadowGC;
-	    botGC = CLIENT_APPEARANCE(pcd).activeBottomShadowGC;
+#ifndef HIGHLIGHT_ACTIVE_BORDER
+	    topGC = CLIENT_APPEARANCE(pcd).inactiveTopShadowGC;
+	    botGC = CLIENT_APPEARANCE(pcd).inactiveBottomShadowGC;
+#else /* HIGHLIGHT_ACTIVE_BORDER */
+            topGC = CLIENT_APPEARANCE(pcd).activeTopShadowGC;
+            botGC = CLIENT_APPEARANCE(pcd).activeBottomShadowGC;
+#endif /* HIGHLIGHT_ACTIVE_BORDER */
 	}
 	else {
 	    topGC = CLIENT_APPEARANCE(pcd).inactiveTopShadowGC;

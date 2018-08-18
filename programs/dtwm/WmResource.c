@@ -3098,7 +3098,7 @@ SetStdGlobalResourceValues (void)
     wmGD.clientAutoPlace = True;
     wmGD.colormapFocusPolicy = CMAP_FOCUS_KEYBOARD;
     wmGD.deiconifyKeyFocus = True;
-    wmGD.doubleClickTime = 500;
+    wmGD.doubleClickTime = 200;
     wmGD.freezeOnConfig = True;
     wmGD.iconAutoPlace = True;
     wmGD.iconClick = True;

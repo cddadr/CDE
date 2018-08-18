@@ -81,7 +81,7 @@
 #define DCLICK_MAX       10
 #define POINTER2B        0
 #define POINTER3B        1
-#define DCLICKDEFAULT    500
+#define DCLICKDEFAULT    200
 #define RIGHT_HANDED     0
 #define LEFT_HANDED      1
 #define TRANSFER         0

@@ -156,4 +156,21 @@ XCOMM
 XCOMM  If $HOME/.profile (.login) has been edited as described above, uncomment
 XCOMM  the following line.
 XCOMM
-XCOMM DTSOURCEPROFILE=true
+DTSOURCEPROFILE=true
+
+XCOMM
+XCOMM  Replace Caps Lock with a more useful key.
+XCOMM
+setxkbmap -option "ctrl:nocaps"
+
+XCOMM
+XCOMM  Set a gray background.
+XCOMM
+xsetroot -solid "#474747"
+
+XCOMM
+XCOMM  If you have compton and hsetroot installed and wish to put them to use,
+XCOMM  comment out the xsetroot line above and uncomment the following lines.
+XCOMM
+XCOMM hsetroot -solid "#474747"
+XCOMM compton -cCGf --active-opacity .8 --inactive-dim .1 --inactive-opacity .6 &

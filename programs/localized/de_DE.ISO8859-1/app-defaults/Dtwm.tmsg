@@ -86,16 +86,16 @@ $ Do not translate messages 12-15.
 $ ----------------------------------------------------------------------------
 $ * Dtwm*ws0*backdrop*image: 
 
-12 "SkyLight"
+12 "NoBackdrop"
 $ * Dtwm*ws1*backdrop*image: 
 
-13 "WaterDrops"
+13 "NoBackdrop"
 $ * Dtwm*ws2*backdrop*image: 
 
-14 "SkyDark"
+14 "NoBackdrop"
 $ * Dtwm*ws3*backdrop*image: 
 
-15 "Paver"
+15 "NoBackdrop"
 $  
 $ ---------------------------------------------------------------------------- 
 $ Do not translate message 17 - 20. 
@@ -104,7 +104,7 @@ $ ----------------------------------------------------------------------------
 $  
 $ Dtwm*FrontPanel*highResFontList 
 
-17 "-dt-interface system-medium-r-normal-m*-*-*-*-*-*-*-*-*:"
+17 "-dt-interface system-medium-r-normal-s*-*-*-*-*-*-*-*-*:"
 $ Dtwm*FrontPanel*mediumResFontList 
 
 18 "-dt-interface system-medium-r-normal-s*-*-*-*-*-*-*-*-*:"

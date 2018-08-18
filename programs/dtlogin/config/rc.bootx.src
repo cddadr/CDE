@@ -42,11 +42,11 @@ XCOMM
 XCOMM If X resolution is 1280X1024 then display big graphic, else display small
 XCOMM graphic.
 XCOMM
-if [ "$SCREEN_WIDTH" -eq 1280 ] ; then
-	/usr/bin/X11/xdi -onroot -center -border black /usr/lpp/X11/lib/X11/images/logo2.gif >/dev/null
-else
-	/usr/bin/X11/xdi -onroot -center -border black /usr/lpp/X11/lib/X11/images/logo1.gif >/dev/null
-fi
+XCOMM if [ "$SCREEN_WIDTH" -eq 1280 ] ; then
+XCOMM 	/usr/bin/X11/xdi -onroot -center -border black /usr/lpp/X11/lib/X11/images/logo2.gif >/dev/null
+XCOMM else
+XCOMM 	/usr/bin/X11/xdi -onroot -center -border black /usr/lpp/X11/lib/X11/images/logo1.gif >/dev/null
+XCOMM fi
 
 XCOMM
 XCOMM wait for boot sequence to end

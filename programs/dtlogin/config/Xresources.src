@@ -147,7 +147,7 @@ Dtlogin*workspaceCursor:	True
 !!  GREETING
 !!
 
-!! Dtlogin*greeting.foreground:        red
+!! Dtlogin*greeting.foreground:        #ff0000
 !! Dtlogin*greeting.background:        #746b6c
 !! Dtlogin*greeting.labelString:       Welcome to %LocalHost%
 !! Dtlogin*greeting.persLabelString:   Welcome %s

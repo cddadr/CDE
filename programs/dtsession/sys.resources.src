@@ -93,7 +93,12 @@ dtsession*saverList: StartDtscreenBlank
 
 Dtwm*frameStyle:         slab
 Dtwm*moveOpaque:         true
+Dtwm*iconClick:          false
 
+XTerm*foreground:        #f0f0f0
+XTerm*background:        #60595b
+XTerm*borderColor:       #60595b
+XTerm*scrollBar:         false
 
 !#################################################################
 !#

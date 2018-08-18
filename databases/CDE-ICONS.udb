@@ -403,9 +403,9 @@ programs/palettes/Orchid.dp
 	install_target = /usr/dt/share/palettes/Orchid.dp
 }
 #
-programs/palettes/Salem.dp
+programs/palettes/Portland.dp
 { default
-        install_target = /usr/dt/share/palettes/Salem.dp
+        install_target = /usr/dt/share/palettes/Portland.dp
 }
 #
 programs/palettes/Sand.dp

@@ -80,11 +80,7 @@ XCOMM ###
 
 Keys DtKeyBindings
 {
-#ifdef sun
 %|nls-15-#DtKeyBindings#|
-#else
-%|nls-11-#DtKeyBindings#|
-#endif
 }
 
 XCOMM ###

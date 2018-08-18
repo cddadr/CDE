@@ -190,7 +190,7 @@ extern int errno;
 #define BW_FOREGROUND		"black"
 #define BW_TEXT_BACKGROUND	"black"
 
-#define BW_LOGO_BACKGROUND	"#a8a8a8"
+#define BW_LOGO_BACKGROUND	"#746b6c"
 #define BW_LOGO_TOPSHPIXMAP	"25_foreground"
 #define BW_DROP_BACKGROUND	"black"
 #define BW_DROP_FOREGROUND	"white"
@@ -207,16 +207,16 @@ extern int errno;
  *  #ef506f  =  burgundy
  *
  */
-#define CO_BACKGROUND		"#a8a8a8"
-#define CO_FOREGROUND		"black"
-#define CO_TEXT_BACKGROUND	"#7e7e7e"
+#define CO_BACKGROUND		"#746b6c"
+#define CO_FOREGROUND		"white"
+#define CO_TEXT_BACKGROUND	"#434149"
 #define CO_HIGHLIGHT		"#ef506f"
 #define CO_SELECTCOLOR		"#ef506f"
 
 #define CO_LOGO_BACKGROUND	"#ef506f"
 #define CO_LOGO_TOPSHPIXMAP	"25_foreground"
-#define CO_DROP_BACKGROUND	"#7e7e7e"
-#define CO_DROP_FOREGROUND	"#7e7e7e"
+#define CO_DROP_BACKGROUND	"#434149"
+#define CO_DROP_FOREGROUND	"#434149"
 #define CO_DROP_BACKPIXMAP	"background"
 
 

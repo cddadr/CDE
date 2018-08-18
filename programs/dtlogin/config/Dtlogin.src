@@ -57,8 +57,8 @@ XCOMM endif
 !!  GREETING
 !!
 
-!! Dtlogin*greeting.foreground:        black
-!! Dtlogin*greeting.background:        #a8a8a8
+!! Dtlogin*greeting.foreground:        red
+!! Dtlogin*greeting.background:        #746b6c
 !! Dtlogin*greeting.fontList:          -*-*schoolbook-medium-i-normal--18-*
 !! Dtlogin*greeting.labelString:       Welcome to %LocalHost%
 !! Dtlogin*greeting.alignment:         ALIGNMENT_CENTER

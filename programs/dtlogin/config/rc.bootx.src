@@ -60,5 +60,5 @@ XCOMM clean up...
 XCOMM remove any left over backgrounds (such as logo or install_assist backdrop)
 XCOMM
 /usr/bin/kill $XCONS_PID
-/usr/bin/X11/xsetroot -solid black
+/usr/bin/X11/xsetroot -solid gray28
 

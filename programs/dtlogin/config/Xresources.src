@@ -78,10 +78,10 @@
 !!      #ef506f = burgundy
 !!
 
-!! Dtlogin*foreground:                         black
+!! Dtlogin*foreground:                         white
 
 XCOMM ifdef COLOR
-!! Dtlogin*background:                         #a8a8a8
+!! Dtlogin*background:                         #74b6c
 #ifdef IVE
    Dtlogin*highlightColor:                     #7D7DCBCBD4D4
 #else  /* IVE */
@@ -147,8 +147,8 @@ Dtlogin*workspaceCursor:	True
 !!  GREETING
 !!
 
-!! Dtlogin*greeting.foreground:        black
-!! Dtlogin*greeting.background:        #a8a8a8
+!! Dtlogin*greeting.foreground:        red
+!! Dtlogin*greeting.background:        #746b6c
 !! Dtlogin*greeting.labelString:       Welcome to %LocalHost%
 !! Dtlogin*greeting.persLabelString:   Welcome %s
 !! Dtlogin*greeting.alignment:         ALIGNMENT_CENTER
